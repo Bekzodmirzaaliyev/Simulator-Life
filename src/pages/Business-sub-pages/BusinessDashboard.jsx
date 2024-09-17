@@ -96,7 +96,7 @@ export default function BusinessDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-100 to-purple-200 p-8 font-sans">
+    <div className="min-h-screen  p-8 font-sans mb-12">
       <div className="max-w-6xl mx-auto">
         <div className="mb-8 bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="p-6 sm:p-10 bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
@@ -117,7 +117,7 @@ export default function BusinessDashboard() {
         </div>
 
         <div className="mb-8">
-          <h2 className="text-2xl font-bold mb-6 text-gray-800">Топ-3 прибыльных бизнеса</h2>
+          <h2 className="text-2xl font-bold mb-6 text-primary">Топ-3 прибыльных бизнеса</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {topBusinesses.map((business, index) => (
               <Motion key={business.id} style={{ scale: spring(hoveredBusiness === index ? 1.05 : 1) }}>
@@ -220,7 +220,7 @@ export default function BusinessDashboard() {
                   </CardHeader>
                   <CardContent className="pt-6">
                     <div className="text-xl font-bold mb-2">{business.income.toLocaleString()} uzs</div>
-                    <p className="text-sm text-gray-500">Ежемесячный доход</p>
+                    <p className="text-sm text-gray-500">Oylik daromad</p>
                   </CardContent>
                 </Card>
               </div>
